@@ -34,7 +34,9 @@ public:
 
 class ListStack{
 public:
+
     Lingkaran *top;
+
     ListStack(){
         top=NULL;
     }
@@ -85,15 +87,17 @@ public:
 
 int main(){
     ListStack stack;
-    Lingkaran l1(10);
+    Lingkaran li(30);
+    stack.push(li.radius);
     stack.push(5.5);
     stack.push(15);
     stack.push(20);
     stack.push(35);
-    cout<<stack.pop()->radius<<endl;
-    cout<<stack.pop()->radius<<endl;
-    cout<<stack.pop()->radius<<endl;
-    cout<<stack.pop()->radius<<endl;
-    cout<<stack.pop()->radius<<endl;
+    cout<<stack.pop()->radius<<" Top = "<<stack.top<<endl;
+    cout<<stack.pop()->radius<<" Top = "<<stack.top<<endl;
+    cout<<stack.pop()->radius<<" Top = "<<stack.top<<endl;
+    cout<<stack.pop()->radius<<" Top = "<<stack.top<<endl;
+    cout<<stack.pop()->radius<<" Top = "<<stack.top<<endl;
+
     return 0;
 }
